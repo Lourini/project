@@ -1,1 +1,1 @@
-web: sh setup.sh && app.py
+web: app.py
