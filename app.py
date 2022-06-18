@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 from keras.models import load_model
 from keras.preprocessing import image  
+import os
   
 
 #load model  
@@ -69,7 +70,9 @@ def video_feed():
 def index():
     return render_template('index.html')
 
+ 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+port = int(os.environ.get("PORT", 5000))
 
+if __name__ == "__main__":
+        app.run(host='0.0.0.0', port=port, debug=True)
