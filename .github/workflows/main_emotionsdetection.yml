@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'EmotionsDetection'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_569320CE958B43F9B317E049DC9CAEA1 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F7EB536728774B8DAD3A96F74955720C }}
